@@ -1,10 +1,11 @@
 .headerBackgroundStyling {
-  background-image: url(../../assets/images/friskis.png);
-  background-repeat: no-repeat;
+  background: url(../../assets/images/friskis.png) no-repeat;
   object-fit: cover;
   height: 50vh;
+  position: relative;
 }
 
 .headerH1Styling {
-  color: white;
+  color: red;
+  text-align: center;
 }

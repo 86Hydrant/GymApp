@@ -1,5 +1,3 @@
-<<<<<<< Updated upstream
-=======
 import React from 'react';
 import classes from './Layout.module.css';
 import Auxiliary from '../../hoc/Auxiliary';
@@ -15,4 +13,3 @@ const Layout = props => (
 );
 
 export default Layout;
->>>>>>> Stashed changes
