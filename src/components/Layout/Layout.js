@@ -5,10 +5,12 @@ import Header from '../Header/Header';
 
 const Layout = props => (
   <Auxiliary>
-    <div>
+    <div className={classes.phoneStyling}>
       <Header />
+      <main className={classes.bodyStyling}>
+        This is where the body will be placed
+      </main>
     </div>
-    <main>This is where the body will be placed</main>
   </Auxiliary>
 );
 
