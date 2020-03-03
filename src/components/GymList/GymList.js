@@ -3,18 +3,24 @@ import GymCard from './GymCard/GymCard';
 import classes from './GymList.module.css';
 
 const GymList = props => {
-  const [gymNames, setGymNames] = useState([
+  const [gymNames] = useState([
     'Stockholm City',
     'Farsta',
     'Haninge',
     'Hagastan'
   ]);
+  const [removeGymCards, setRemoveGymCards] = useState(false);
 
-  return (
+  const toggleGymState = () => {
+    setRemoveGymCards(!removeGymCards);
+    console.log(removeGymCards);
+  };
+
+  return removeGymCards ? null : (
     <div id='listofGyms'>
       <ul className={classes.gymListStyling}>
         {gymNames.map((gymName, index) => (
-          <GymCard key={gymName.index} gymName={gymName} />
+          <GymCard key={index} gymName={gymName} onClick={toggleGymState} />
         ))}
       </ul>
     </div>

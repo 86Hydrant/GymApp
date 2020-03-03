@@ -9,6 +9,13 @@
   width: 85%;
 }
 
+label {
+  color: #dd022c;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.3rem;
+}
+
 ::placeholder {
   /* Chrome, Firefox, Opera, Safari 10.1+ */
   color: #dd022c;
