@@ -1,0 +1,4 @@
+.gymListStyling {
+  display: flex;
+  flex-direction: column;
+}

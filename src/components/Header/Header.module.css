@@ -1,0 +1,21 @@
+.headerBackgroundStyling {
+  background: url(../../assets/images/friskis.png) no-repeat;
+  object-fit: cover;
+  height: 250px;
+  letter-spacing: 0.4rem;
+  font-weight: bold;
+  margin-top: -22px;
+}
+
+.headerH1Styling {
+  color: white;
+  line-height: 250px;
+  text-align: center;
+  text-shadow: black 1px 0 10px;
+}
+
+.logo {
+  position: absolute;
+  left: 15px;
+  top: 190px;
+}

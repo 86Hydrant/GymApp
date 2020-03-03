@@ -1,0 +1,12 @@
+.gymNameStyling {
+  color: #dd022c;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: solid 2px #dd022c;
+  width: 100%;
+}

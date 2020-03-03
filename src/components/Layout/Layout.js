@@ -1,11 +1,16 @@
-import React from 'react';
-import classes from './Layout.module.css';
-import Auxiliary from '../../hoc/Auxiliary';
+import Header from '../Header/Header';
+import SearchBar from '../SearchBar/SearchBar';
+import GymList from '../GymList/GymList';
 
 const Layout = props => (
   <Auxiliary>
-    <div>Header goes here</div>
-    <main>This is where the body will be placed</main>
+    <div className={classes.phoneStyling}>
+      <Header />
+      <main className={classes.bodyStyling}>
+        <SearchBar />
+        <GymList />
+      </main>
+    </div>
   </Auxiliary>
 );
 
