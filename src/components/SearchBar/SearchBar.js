@@ -3,12 +3,14 @@ import classes from './SearchBar.module.css';
 
 const SearchBar = props => {
   return (
-    <input
-      className={classes.inputBarStyle}
-      id='Search Bar for Gym'
-      type='text'
-      placeholder='SEARCH'
-    />
+    <div>
+      <label htmlFor='Search Bar for Gym'>Search for a gym:</label>
+      <input
+        className={classes.inputBarStyle}
+        id='Search Bar for Gym'
+        type='text'
+      />
+    </div>
   );
 };
 
