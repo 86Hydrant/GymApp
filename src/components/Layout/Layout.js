@@ -1,6 +1,3 @@
-import React from 'react';
-import classes from './Layout.module.css';
-import Auxiliary from '../../hoc/Auxiliary';
 import Header from '../Header/Header';
 import SearchBar from '../SearchBar/SearchBar';
 import GymList from '../GymList/GymList';
