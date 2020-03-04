@@ -1,17 +1,39 @@
-import React from 'react';
-import classes from './Layout.module.css';
-import Auxiliary from '../../hoc/Auxiliary';
-import Header from '../Header/Header';
-import SearchBar from '../SearchBar/SearchBar';
-import GymList from '../GymList/GymList';
-
+import React from "react";
+import classes from "./Layout.module.css";
+import Auxiliary from "../../hoc/Auxiliary";
+import Header from "../Header/Header";
+import SearchBar from "../SearchBar/SearchBar";
+import GymList from "../GymList/GymList";
+import ActivitiesCard from "../Activities/ActivitiesCard/ActivitiesCard";
 const Layout = props => (
   <Auxiliary>
     <div className={classes.phoneStyling}>
       <Header />
       <main className={classes.bodyStyling}>
-        <SearchBar />
-        <GymList />
+        {/*<SearchBar />*/}
+        {/* <GymList />*/}
+        <h2 className={classes.dateActivityScreen}>TODAY:</h2>
+        <ActivitiesCard
+          time="17:30"
+          minutes="55"
+          activityName="Cirkelfys"
+          gymName="F&S City"
+          spotsLeft="4"
+        />
+        <ActivitiesCard
+          time="18:00"
+          minutes="45"
+          activityName="Yoga Energy"
+          gymName="F&S Farsta"
+          spotsLeft="10"
+        />
+        <ActivitiesCard
+          time="14:30"
+          minutes="55"
+          activityName="Power Hour"
+          gymName="F&S City"
+          spotsLeft="6"
+        />
       </main>
     </div>
   </Auxiliary>
