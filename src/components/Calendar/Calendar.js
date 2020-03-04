@@ -48,8 +48,6 @@ const Calendar = () => {
             className={classes.calendarDates}
             key={date}
             date={date}
-            aria-label={'march'}
-            aria-required='true'
           />
         );
       })}
