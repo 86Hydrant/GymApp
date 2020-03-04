@@ -9,10 +9,7 @@ const Layout = props => (
   <Auxiliary>
     <div className={classes.phoneStyling}>
       <Header />
-      <main className={classes.bodyStyling}>
-        <SearchBar />
-        <GymList />
-      </main>
+      <main className={classes.bodyStyling}></main>
     </div>
   </Auxiliary>
 );
