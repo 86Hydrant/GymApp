@@ -4,12 +4,15 @@ import Auxiliary from '../../hoc/Auxiliary';
 import Header from '../Header/Header';
 import SearchBar from '../SearchBar/SearchBar';
 import GymList from '../GymList/GymList';
+import Calendar from '../Calendar/Calendar';
 
 const Layout = props => (
   <Auxiliary>
     <div className={classes.phoneStyling}>
-      <Header />
-      <main className={classes.bodyStyling}></main>
+      <Header heading='Calendar' />
+      <main className={classes.bodyStyling}>
+        <Calendar />
+      </main>
     </div>
   </Auxiliary>
 );

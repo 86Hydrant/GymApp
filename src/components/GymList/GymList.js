@@ -13,7 +13,6 @@ const GymList = props => {
 
   const toggleGymState = () => {
     setRemoveGymCards(!removeGymCards);
-    console.log(removeGymCards);
   };
 
   return removeGymCards ? null : (

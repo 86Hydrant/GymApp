@@ -1,0 +1,66 @@
+.calendarContainer {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(2, 1fr) repeat(7, 45px);
+  justify-content: center;
+  align-items: center;
+}
+
+.linkContainer {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 7;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+p {
+  color: #dd022c;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.calendarDates {
+  justify-self: center;
+  align-items: center;
+}
+
+.month {
+  grid-row: 4 / span 1;
+  grid-column: 1 / span 6;
+  color: #dd022c;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.mo {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.tu {
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+}
+.we {
+  grid-row: 3 / span 1;
+  grid-column: 3 / span 1;
+}
+.th {
+  grid-row: 3 / span 1;
+  grid-column: 4 / span 1;
+}
+.fr {
+  grid-row: 3 / span 1;
+  grid-column: 5 / span 1;
+}
+.sa {
+  grid-row: 3 / span 1;
+  grid-column: 6 / span 1;
+}
+.su {
+  grid-row: 3 / span 1;
+  grid-column: 7 / span 1;
+}
