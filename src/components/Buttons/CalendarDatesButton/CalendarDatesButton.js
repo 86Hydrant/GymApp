@@ -4,7 +4,7 @@ import classes from './CalendarDatesButton.module.css';
 
 const CalendarDatesButton = props => {
   return (
-    <a aria-label={'March'} className={classes.calendarButtonStyling} href='#'>
+    <a aria-label={'March '+ props.date} className={classes.calendarButtonStyling} href='#'>
       {props.date}
     </a>
   );
