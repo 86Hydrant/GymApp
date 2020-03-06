@@ -9,6 +9,7 @@ const GymList = props => {
     'Haninge',
     'Hagastan'
   ]);
+
   const [removeGymCards, setRemoveGymCards] = useState(false);
 
   const toggleGymState = () => {
@@ -19,7 +20,13 @@ const GymList = props => {
     <div id='listofGyms'>
       <ul className={classes.gymListStyling}>
         {gymNames.map((gymName, index) => (
-          <GymCard key={index} gymName={gymName} onClick={toggleGymState} />
+          <GymCard
+            key={index}
+            gymName={gymName}
+            toggleGymState={toggleGymState}
+            setSelectedGymName={setSelectedGymName}
+            selectedGymName={selectedGymName}
+          />
         ))}
       </ul>
     </div>
