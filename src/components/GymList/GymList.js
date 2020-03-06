@@ -24,8 +24,8 @@ const GymList = props => {
             key={index}
             gymName={gymName}
             toggleGymState={toggleGymState}
-            setSelectedGymName={setSelectedGymName}
-            selectedGymName={selectedGymName}
+            setSelectedGymName={props.setSelectedGymName}
+            selectedGymName={props.selectedGymName}
           />
         ))}
       </ul>

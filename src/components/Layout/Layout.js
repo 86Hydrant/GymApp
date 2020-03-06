@@ -24,8 +24,8 @@ const Layout = props => {
 
   return (
     <Auxiliary>
-      <div>
-        <Header heading={headerState} />
+      <div className={classes.phoneStyling}>
+        <Header heading={headerState} setHeading={setHeaderState} />
         <main className={classes.bodyStyling}>
           <SearchBar searchBarLabel={searchBarState[0]} />
           <GymList
