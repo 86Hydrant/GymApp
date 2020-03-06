@@ -1,0 +1,12 @@
+.mediumButtonStyling {
+  width: 155px;
+  height: 60px;
+  background-color: #dd022c;
+  border-radius: 40px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  box-sizing: border-box;
+  display: inline-block;
+  line-height: 60px;
+}

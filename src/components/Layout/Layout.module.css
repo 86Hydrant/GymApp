@@ -1,9 +1,9 @@
 .phoneStyling {
   margin: 0;
   padding: 0;
-  width: 360px;
-  border: 5px solid black;
+  width: 100vw;
 }
+
 .bodyStyling {
   text-align: center;
 }
