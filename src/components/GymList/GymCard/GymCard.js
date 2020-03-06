@@ -13,7 +13,6 @@ const GymCard = props => {
       }}
     >
       <h3>{props.gymName}</h3>
-      <p>test: {props.selectedGymName}</p>
     </a>
   );
 };
