@@ -1,12 +1,31 @@
 .inputBarStyle {
   text-align: center;
-  color: DD022C;
+  color: #dd022c;
   border-radius: 50px;
   padding: 10px;
   margin-top: 10px;
   margin-bottom: 20px;
   border: solid 2px #dd022c;
-  width: 85%;
+  width: 300px;
+  height: 60px;
+}
+
+label {
+  color: #dd022c;
+  font-weight: bold;
+  font-size: 16px;
+  letter-spacing: 0.3rem;
+}
+
+.searchBarContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  grid-column-start: 1;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 ::placeholder {
