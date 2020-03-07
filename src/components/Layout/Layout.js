@@ -1,19 +1,11 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-import React from 'react';
-=======
 import React, { useState } from 'react';
->>>>>>> 816478b1064c2d83c0c1d89550bf6c6dfd03de96
-=======
-import React, { useState } from 'react';
->>>>>>> 09beac298f44e5a0643cc30a93b41945f34a0560
 import classes from './Layout.module.css';
 import Auxiliary from '../../hoc/Auxiliary';
 import Header from '../Header/Header';
 import SearchBar from '../SearchBar/SearchBar';
 import GymList from '../GymList/GymList';
 import Calendar from '../Calendar/Calendar';
-import ActivitiesCard from "../Activities/ActivitiesCard/ActivitiesCard";
+import ActivitiesCard from '../Activities/ActivitiesCard/ActivitiesCard';
 
 const Layout = props => {
   const [headerState, setHeaderState] = useState([
@@ -41,7 +33,7 @@ const Layout = props => {
             selectedGymName={selectedGymName}
             setSelectedGymName={setSelectedGymName}
           />
-             {/*   <h2 className={classes.dateActivityScreen}>TODAY:</h2>
+          {/*   <h2 className={classes.dateActivityScreen}>TODAY:</h2>
         <ActivitiesCard
           time="17:30"
           minutes="55"
