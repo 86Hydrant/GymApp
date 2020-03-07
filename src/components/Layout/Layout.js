@@ -6,14 +6,15 @@ import SearchBar from '../SearchBar/SearchBar';
 import GymList from '../GymList/GymList';
 import Calendar from '../Calendar/Calendar';
 import ActivitiesCard from '../Activities/ActivitiesCard/ActivitiesCard';
+import LargeRoundedButton from '../Buttons/LargeRoundedButton/LargeRoundedButton';
 
 const Layout = props => {
   const [headerState, setHeaderState] = useState([
     'Pick a Gym',
-    'Selected Gyms',
-    'Calendar',
-    'Activities',
-    'Picked Card'
+    'Selected Gyms'
+    // 'Calendar',
+    // 'Activities',
+    // 'Picked Card'
   ]);
 
   const [searchBarState, setSearchBarState] = useState([
@@ -21,40 +22,26 @@ const Layout = props => {
     'Search for a Date'
   ]);
 
-  const [selectedGymName, setSelectedGymName] = useState(['']);
+  const [selectedGymName, setSelectedGymName] = useState(null);
 
   return (
     <Auxiliary>
       <div className={classes.phoneStyling}>
-        <Header heading={headerState} setHeading={setHeaderState} />
+        {selectedGymName ? null : <Header heading={headerState[0]} />}
         <main className={classes.bodyStyling}>
-          <SearchBar searchBarLabel={searchBarState[0]} />
           <GymList
             selectedGymName={selectedGymName}
             setSelectedGymName={setSelectedGymName}
+            searchBarLabel={searchBarState}
           />
-          {/*   <h2 className={classes.dateActivityScreen}>TODAY:</h2>
-        <ActivitiesCard
-          time="17:30"
-          minutes="55"
-          activityName="Cirkelfys"
-          gymName="F&S City"
-          spotsLeft="4"
-        />
-        <ActivitiesCard
-          time="18:00"
-          minutes="45"
-          activityName="Yoga Energy"
-          gymName="F&S Farsta"
-          spotsLeft="10"
-        />
-        <ActivitiesCard
-          time="14:30"
-          minutes="55"
-          activityName="Power Hour"
-          gymName="F&S City"
-          spotsLeft="6"
-        />*/}
+          {selectedGymName ? (
+            <Auxiliary>
+              <Header heading={headerState[1]} /> <h2>{selectedGymName}</h2>
+              <LargeRoundedButton name='Add Another Gym' />
+              <LargeRoundedButton name='Clear' />
+              <LargeRoundedButton name='Continue' />
+            </Auxiliary>
+          ) : null}
         </main>
       </div>
     </Auxiliary>

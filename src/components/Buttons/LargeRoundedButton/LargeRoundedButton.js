@@ -1,14 +1,14 @@
 import React from 'react';
-import classes from './MediumRoundedButton.module.css';
+import classes from './LargeRoundedButton.module.css';
 
 const MediumRoundedButton = props => {
   return (
     <a
-      className={classes.mediumButtonStyling}
+      className={classes.largeButtonStyling}
       aria-label={props.ariaLabel}
       href='#'
     >
-      {props.day}
+      {props.name}
     </a>
   );
 };
