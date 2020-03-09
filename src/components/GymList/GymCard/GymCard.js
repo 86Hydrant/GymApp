@@ -1,10 +1,11 @@
 import React from 'react';
 import classes from './GymCard.module.css';
+import { Link } from 'react-router-dom';
 
 const GymCard = props => {
   const gymName = props.gymName;
   return (
-    <a
+    <Link
       className={classes.gymNameStyling}
       href='/'
       onClick={() => {
@@ -13,7 +14,7 @@ const GymCard = props => {
       }}
     >
       <h3>{props.gymName}</h3>
-    </a>
+    </Link>
   );
 };
 

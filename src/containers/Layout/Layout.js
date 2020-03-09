@@ -22,30 +22,22 @@ const Layout = props => {
 
   return (
     <main>
-      <Link path='/' component={Header}></Link>;
-      <Link path='/' component={GymList}></Link>;
+      <Route
+        path='/'
+        render={props => <Header {...props} heading={headerState[0]} />}
+      ></Route>
+      <Route
+        path='/'
+        render={props => (
+          <GymList
+            {...props}
+            setSelectedGymName={setSelectedGymName}
+            selectedGymName={selectedGymName}
+          />
+        )}
+      ></Route>
     </main>
   );
 };
 
 export default Layout;
-// <Auxiliary>
-//   <div className={classes.phoneStyling}>
-//     {selectedGymName ? null : <Header heading={headerState[0]} />}
-//     <main className={classes.bodyStyling}>
-//       <GymList
-//         selectedGymName={selectedGymName}
-//         setSelectedGymName={setSelectedGymName}
-//         searchBarLabel={searchBarState}
-//       />
-//       {selectedGymName ? (
-//         <Auxiliary>
-//           <Header heading={headerState[1]} /> <h2>{selectedGymName}</h2>
-//           <LargeRoundedButton name='Add Another Gym' />
-//           <LargeRoundedButton name='Clear' />
-//           <LargeRoundedButton name='Continue' />
-//         </Auxiliary>
-//       ) : null}
-//     </main>
-//   </div>
-// </Auxiliary>
