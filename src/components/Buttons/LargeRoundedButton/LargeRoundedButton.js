@@ -6,7 +6,7 @@ const MediumRoundedButton = props => {
     <a
       className={classes.largeButtonStyling}
       aria-label={props.ariaLabel}
-      href='#'
+      href='/'
     >
       {props.name}
     </a>

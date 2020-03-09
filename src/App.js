@@ -1,8 +1,13 @@
 import React from 'react';
-import Layout from './components/Layout/Layout';
+import Layout from './containers/Layout/Layout';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = props => {
-  return <Layout />;
+  return (
+    <BrowserRouter>
+      <Layout />
+    </BrowserRouter>
+  );
 };
 
 export default App;

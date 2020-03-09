@@ -6,7 +6,7 @@ const GymCard = props => {
   return (
     <a
       className={classes.gymNameStyling}
-      href='#'
+      href='/'
       onClick={() => {
         props.setSelectedGymName(gymName);
         props.toggleGymState();

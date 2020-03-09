@@ -19,7 +19,7 @@ const GymList = props => {
 
   return removeGymCards ? null : (
     <div id='listofGyms'>
-      <SearchBar searchBarLabel={props.searchBarLabel[0]} />
+      <SearchBar searchBarLabel={props.searchBarLabel} />
       <ul className={classes.gymListStyling}>
         {gymNames.map((gymName, index) => (
           <GymCard

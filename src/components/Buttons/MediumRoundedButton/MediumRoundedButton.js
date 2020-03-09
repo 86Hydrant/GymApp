@@ -6,7 +6,7 @@ const MediumRoundedButton = props => {
     <a
       className={classes.mediumButtonStyling}
       aria-label={props.ariaLabel}
-      href='#'
+      href='/'
     >
       {props.day}
     </a>
