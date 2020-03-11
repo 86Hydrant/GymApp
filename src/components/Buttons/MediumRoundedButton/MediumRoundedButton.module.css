@@ -6,6 +6,8 @@
   color: white;
   font-size: 16px;
   font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-align: center;
   box-sizing: border-box;
   display: inline-block;
   line-height: 60px;

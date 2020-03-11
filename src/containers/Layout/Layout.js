@@ -35,8 +35,8 @@ const Layout = props => {
 
 export default Layout;
 
-//   'Pick a Gym',
-//   'Selected Gyms',
-//   'Calendar',
+//   'Pick a Gym', done
+//   'Selected Gyms', done
+//   'Calendar', done
 //   'Activities',
 //   'Picked Card'
