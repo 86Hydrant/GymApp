@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Route, Switch } from 'react-router-dom';
-import Calendar from '../../components/Calendar/Calendar';
+import CalendarPick from '../CalendarPick/CalendarPick';
 import SelectedGym from '../SelectedGym/SelectedGym';
 import PickAGym from '../PickAGym/PickAGym';
 import classes from './Layout.module.css';
@@ -21,8 +21,12 @@ const Layout = props => {
             />
           )}
         />
-        <Route path='/selectedGym' exact component={SelectedGym} />
-        <Route path='/calendar' exact component={Calendar} />
+        <Route
+          path='/selectedGym'
+          exact
+          render={() => <SelectedGym selectedGymName={selectedGymName} />}
+        />
+        <Route path='/calendar' exact component={CalendarPick} />
         {/* <Route path='/activities' exact component={Activities} /> */}
       </Switch>
     </main>
