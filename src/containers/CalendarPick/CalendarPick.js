@@ -1,12 +1,12 @@
-import React from 'react';
-import Header from '../../components/Header/Header';
-import Auxiliary from '../../hoc/Auxiliary';
-import Calendar from '../../components/Calendar/Calendar';
+import React from "react";
+import Header from "../../components/Header/Header";
+import Auxiliary from "../../hoc/Auxiliary";
+import Calendar from "../../components/Calendar/Calendar";
 
 const CalendarPick = props => {
   return (
     <Auxiliary>
-      <Header heading={'Calendar'} />
+      <Header heading={"Calendar"} />
       <Calendar />
     </Auxiliary>
   );
