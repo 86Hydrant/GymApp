@@ -2,15 +2,21 @@
   color: #dd022c;
   background-color: white;
   font-weight: bold;
+  font-size: 18px;
   letter-spacing: 0.3rem;
   text-align: center;
   padding: 5px;
   margin-bottom: 10px;
+  border: solid 2px #dd022c;
   width: 100%;
 }
 
-h2 {
-  letter-spacing: 0.4rem;
-  font-weight: bold;
-  color: #dd022c;
+a:link {
+  text-decoration: none;
+}
+
+a:hover,
+button:hover {
+  background-color: #dd022c;
+  color: white;
 }

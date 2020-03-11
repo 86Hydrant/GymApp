@@ -6,7 +6,7 @@ import PickAGym from '../PickAGym/PickAGym';
 import classes from './Layout.module.css';
 
 const Layout = props => {
-  const [selectedGymName, setSelectedGymName] = useState(null);
+  const [selectedGymName, setSelectedGymName] = useState([]);
 
   return (
     <main className={classes.bodyStyling}>
@@ -24,7 +24,12 @@ const Layout = props => {
         <Route
           path='/selectedGym'
           exact
-          render={() => <SelectedGym selectedGymName={selectedGymName} />}
+          render={() => (
+            <SelectedGym
+              selectedGymName={selectedGymName}
+              setSelectedGymName={setSelectedGymName}
+            />
+          )}
         />
         <Route path='/calendar' exact component={CalendarPick} />
         {/* <Route path='/activities' exact component={Activities} /> */}
@@ -35,8 +40,8 @@ const Layout = props => {
 
 export default Layout;
 
-//   'Pick a Gym', done
-//   'Selected Gyms', done
-//   'Calendar', done
+//   'Pick a Gym',
+//   'Selected Gyms',
+//   'Calendar',
 //   'Activities',
 //   'Picked Card'

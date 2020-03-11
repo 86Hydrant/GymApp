@@ -1,19 +1,6 @@
-.phoneStyling {
+.bodyStyling {
   margin: 0;
   padding: 0;
   width: 100vw;
-}
-
-.bodyStyling {
   text-align: center;
-}
-
-.dateActivityScreen {
-  text-align: left;
-  color: #dd022c;
-  letter-spacing: 0.2em;
-  padding-left: 20px;
-  margin: 0;
-  margin-top: 4px;
-  font-size: 24px;
 }
