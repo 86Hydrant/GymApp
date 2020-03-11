@@ -13,11 +13,7 @@ const GymList = props => {
 
   const [removeGymCards, setRemoveGymCards] = useState(false);
 
-  const toggleGymState = () => {
-    setRemoveGymCards(!removeGymCards);
-  };
-
-  return removeGymCards ? null : (
+  return (
     <div id='listofGyms'>
       <SearchBar searchBarLabel={props.searchBarLabel} />
       <ul className={classes.gymListStyling}>
@@ -25,7 +21,6 @@ const GymList = props => {
           <GymCard
             key={index}
             gymName={gymName}
-            toggleGymState={toggleGymState}
             setSelectedGymName={props.setSelectedGymName}
             selectedGymName={props.selectedGymName}
           />

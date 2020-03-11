@@ -12,7 +12,6 @@ const GymCard = props => {
       to='/selectedGym'
       onClick={() => {
         props.setSelectedGymName([previousGymName, gymName]);
-        props.toggleGymState();
       }}
     >
       <h3>{props.gymName}</h3>

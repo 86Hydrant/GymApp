@@ -6,7 +6,7 @@ import PickAGym from '../PickAGym/PickAGym';
 import classes from './Layout.module.css';
 
 const Layout = props => {
-  const [selectedGymName, setSelectedGymName] = useState(null);
+  const [selectedGymName, setSelectedGymName] = useState([]);
 
   return (
     <main className={classes.bodyStyling}>
