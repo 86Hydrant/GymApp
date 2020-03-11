@@ -1,43 +1,38 @@
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Header from '../../components/Header/Header';
-import SearchBar from '../../components/SearchBar/SearchBar';
-import GymList from '../../components/GymList/GymList';
+import { Route, Switch } from 'react-router-dom';
+import Calendar from '../../components/Calendar/Calendar';
+import SelectedGym from '../SelectedGym/SelectedGym';
+import PickAGym from '../PickAGym/PickAGym';
+import classes from './Layout.module.css';
 
 const Layout = props => {
-  const [headerState, setHeaderState] = useState([
-    'Pick a Gym',
-    'Selected Gyms',
-    'Calendar',
-    'Activities',
-    'Picked Card'
-  ]);
-
-  const [searchBarState, setSearchBarState] = useState([
-    'Search for a Gym',
-    'Search for a Date'
-  ]);
-
   const [selectedGymName, setSelectedGymName] = useState(null);
 
   return (
-    <main>
-      <Route
-        path='/'
-        render={props => <Header {...props} heading={headerState[0]} />}
-      ></Route>
-      <Route
-        path='/'
-        render={props => (
-          <GymList
-            {...props}
-            setSelectedGymName={setSelectedGymName}
-            selectedGymName={selectedGymName}
-          />
-        )}
-      ></Route>
+    <main className={classes.bodyStyling}>
+      <Switch>
+        <Route
+          path='/'
+          exact
+          render={() => (
+            <PickAGym
+              setSelectedGymName={setSelectedGymName}
+              selectedGymName={selectedGymName}
+            />
+          )}
+        />
+        <Route path='/selectedGym' exact component={SelectedGym} />
+        <Route path='/calendar' exact component={Calendar} />
+        {/* <Route path='/activities' exact component={Activities} /> */}
+      </Switch>
     </main>
   );
 };
 
 export default Layout;
+
+//   'Pick a Gym',
+//   'Selected Gyms',
+//   'Calendar',
+//   'Activities',
+//   'Picked Card'

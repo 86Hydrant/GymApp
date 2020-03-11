@@ -1,16 +1,18 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classes from './LargeRoundedButton.module.css';
 
-const MediumRoundedButton = props => {
+const LargeRoundedButton = props => {
   return (
-    <a
+    <Link
       className={classes.largeButtonStyling}
       aria-label={props.ariaLabel}
-      href='/'
+      to={props.to}
+      exact
     >
       {props.name}
-    </a>
+    </Link>
   );
 };
 
-export default MediumRoundedButton;
+export default LargeRoundedButton;
