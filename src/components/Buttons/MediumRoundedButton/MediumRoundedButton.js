@@ -1,11 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import classes from './MediumRoundedButton.module.css';
 
 const MediumRoundedButton = props => {
   return (
-    <a className={classes.mediumButtonStyling} href='#'>
+    <Link
+      className={classes.mediumButtonStyling}
+      aria-label={props.ariaLabel}
+      to={props.to}
+    >
       {props.day}
-    </a>
+    </Link>
   );
 };
 

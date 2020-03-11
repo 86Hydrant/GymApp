@@ -1,19 +1,22 @@
 import React from 'react';
 import classes from './GymCard.module.css';
+import { Link } from 'react-router-dom';
 
 const GymCard = props => {
+  const previousGymName = props.selectedGymName;
   const gymName = props.gymName;
+
   return (
-    <a
+    <Link
       className={classes.gymNameStyling}
-      href='#'
+      to='/selectedGym'
       onClick={() => {
-        props.setSelectedGymName(gymName);
+        props.setSelectedGymName([previousGymName, gymName]);
         props.toggleGymState();
       }}
     >
       <h3>{props.gymName}</h3>
-    </a>
+    </Link>
   );
 };
 
