@@ -2,14 +2,26 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import Auxiliary from "../../hoc/Auxiliary";
 import ActivitiesCard from "../../components/Activities/ActivitiesCard/ActivitiesCard";
-import classes from "../../components/Activites/ActivitiesCard/ActivitesCard.module.css";
+import classes from "../../components/Activities/ActivitiesCard/ActivitiesCard.module.css";
+import { activitiesList } from "../../components/Activities/ActivitiesList";
 
 const PickActivity = props => {
   return (
     <Auxiliary>
       <Header heading={"Activities"} />
       <h2 className={classes.dateActivityScreen}>TODAY:</h2>
-      <ActivitiesCard />
+      {activitiesList.map(activity => {
+        return (
+          <ActivitiesCard
+            to={"/Activities/" + activity.id}
+            time={activity.time}
+            minutes={activity.minutes}
+            activityName={activity.name}
+            spotsLeft={activity.spotsLeft}
+            gymName={activity.gymName}
+          />
+        );
+      })}
     </Auxiliary>
   );
 };

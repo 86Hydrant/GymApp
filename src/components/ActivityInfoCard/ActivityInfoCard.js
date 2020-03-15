@@ -1,8 +1,8 @@
 import React from "react";
-import classes from "../ActivitiesCard/Activities.module.css";
-import MediumRoundedButton from "../../Buttons/MediumRoundedButton/MediumRoundedButton";
+import classes from "../Activities/ActivitiesCard/ActivitiesCard.module.css";
+import MediumRoundedButton from "../Buttons/MediumRoundedButton/MediumRoundedButton";
 
-const ActivitiesInfoCard = props => {
+const ActivityInfoCard = props => {
   return (
     <div>
       <div className={classes.infoContainer}>
@@ -31,3 +31,5 @@ const ActivitiesInfoCard = props => {
     </div>
   );
 };
+
+export default ActivityInfoCard;

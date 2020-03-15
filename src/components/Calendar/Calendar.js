@@ -1,8 +1,9 @@
-import React from 'react';
-import classes from './Calendar.module.css';
-import MediumRoundedButton from '../Buttons/MediumRoundedButton/MediumRoundedButton';
-import SearchBar from '../SearchBar/SearchBar';
-import CalendarDatesButton from '../Buttons/CalendarDatesButton/CalendarDatesButton';
+import React from "react";
+import classes from "./Calendar.module.css";
+import MediumRoundedButton from "../Buttons/MediumRoundedButton/MediumRoundedButton";
+import SearchBar from "../SearchBar/SearchBar";
+import CalendarDatesButton from "../Buttons/CalendarDatesButton/CalendarDatesButton";
+import { Link } from "react-router-dom";
 
 const Calendar = () => {
   const datesArray = [];
@@ -14,32 +15,33 @@ const Calendar = () => {
   return (
     <div className={classes.calendarContainer}>
       <div className={classes.linkContainer}>
-        <MediumRoundedButton day='TODAY' />
-        <MediumRoundedButton day='TOMORROW' />
+        <MediumRoundedButton day="TODAY" to="/Activities" />
+
+        <MediumRoundedButton day="TOMORROW" />
       </div>
-      <SearchBar className={classes.searchDateBar} label='SEARCH FOR A DATE' />
-      <p aria-hidden='true' className={classes.mo}>
+      <SearchBar className={classes.searchDateBar} label="SEARCH FOR A DATE" />
+      <p aria-hidden="true" className={classes.mo}>
         M
       </p>
-      <p aria-hidden='true' className={classes.tu}>
+      <p aria-hidden="true" className={classes.tu}>
         T
       </p>
-      <p aria-hidden='true' className={classes.we}>
+      <p aria-hidden="true" className={classes.we}>
         W
       </p>
-      <p aria-hidden='true' className={classes.th}>
+      <p aria-hidden="true" className={classes.th}>
         T
       </p>
-      <p aria-hidden='true' className={classes.fr}>
+      <p aria-hidden="true" className={classes.fr}>
         F
       </p>
-      <p aria-hidden='true' className={classes.sa}>
+      <p aria-hidden="true" className={classes.sa}>
         S
       </p>
-      <p aria-hidden='true' className={classes.su}>
+      <p aria-hidden="true" className={classes.su}>
         S
       </p>
-      <h3 aria-hidden='true' className={classes.month}>
+      <h3 aria-hidden="true" className={classes.month}>
         MARCH
       </h3>
       {datesArray.map(date => {
