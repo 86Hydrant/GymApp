@@ -36,3 +36,9 @@ body {
   color: white;
   background-color: #dd022c;
 }
+
+h2,
+.infoParagraph {
+  text-align: left;
+  padding: 0 20px;
+}

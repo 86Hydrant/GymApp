@@ -6,6 +6,7 @@ import PickAGym from "../PickAGym/PickAGym";
 import PickActivity from "../PickActivity/PickActivity";
 import classes from "./Layout.module.css";
 import ActivityInfoCard from "../../components/ActivityInfoCard/ActivityInfoCard";
+import { activitiesList } from "../../components/Activities/ActivitiesList";
 
 const Layout = props => {
   const [selectedGymName, setSelectedGymName] = useState(null);
@@ -30,7 +31,16 @@ const Layout = props => {
         />
         <Route path="/calendar" exact component={CalendarPick} />
         <Route path="/Activities/" exact component={PickActivity} />
-        <Route path="/Activities/:id" component={ActivityInfoCard} />
+        <Route
+          path="/Activities/:id"
+          render={props => {
+            const id = props.match.params.id;
+            const data = activitiesList.find(activity => activity.id == id);
+            if (data) {
+              return <ActivityInfoCard {...props} {...data} />;
+            }
+          }}
+        />
       </Switch>
     </main>
   );
