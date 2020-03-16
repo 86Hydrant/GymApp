@@ -14,7 +14,7 @@ const ActivityInfoCard = props => {
         <p className={classes.activityInfo}>{props.spotsLeft} Spots Left</p>
         <p className={classes.activityInfo}>{props.gymName}</p>
       </div>
-      <h2>Info:</h2>
+      <h2 className={classes.infoHeader}>Info:</h2>
       <p className={classes.infoParagraph}>
         Lorem Ipsum Dolor Sit Amet Banh mi vegan lumbersexual brooklyn freegan
         drinking vinegar ramps mustache pork belly art party tbh humblebrag
