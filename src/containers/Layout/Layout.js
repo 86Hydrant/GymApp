@@ -1,9 +1,12 @@
-import React, { useState } from 'react';
-import { Route, Switch } from 'react-router-dom';
-import CalendarPick from '../CalendarPick/CalendarPick';
-import SelectedGym from '../SelectedGym/SelectedGym';
-import PickAGym from '../PickAGym/PickAGym';
-import classes from './Layout.module.css';
+import React, { useState } from "react";
+import { Route, Switch } from "react-router-dom";
+import CalendarPick from "../CalendarPick/CalendarPick";
+import SelectedGym from "../SelectedGym/SelectedGym";
+import PickAGym from "../PickAGym/PickAGym";
+import PickActivity from "../PickActivity/PickActivity";
+import classes from "./Layout.module.css";
+import ActivityInfoCard from "../../components/ActivityInfoCard/ActivityInfoCard";
+import { activitiesList } from "../../components/Activities/ActivitiesList";
 
 const Layout = props => {
   const [selectedGymName, setSelectedGymName] = useState([]);
@@ -12,7 +15,7 @@ const Layout = props => {
     <main className={classes.bodyStyling}>
       <Switch>
         <Route
-          path='/'
+          path="/"
           exact
           render={() => (
             <PickAGym
@@ -22,7 +25,7 @@ const Layout = props => {
           )}
         />
         <Route
-          path='/selectedGym'
+          path="/selectedGym"
           exact
           render={() => (
             <SelectedGym
@@ -31,8 +34,18 @@ const Layout = props => {
             />
           )}
         />
-        <Route path='/calendar' exact component={CalendarPick} />
-        {/* <Route path='/activities' exact component={Activities} /> */}
+        <Route path="/calendar" exact component={CalendarPick} />
+        <Route path="/Activities/" exact component={PickActivity} />
+        <Route
+          path="/Activities/:id"
+          render={props => {
+            const id = props.match.params.id;
+            const data = activitiesList.find(activity => activity.id == id);
+            if (data) {
+              return <ActivityInfoCard {...props} {...data} />;
+            }
+          }}
+        />
       </Switch>
     </main>
   );

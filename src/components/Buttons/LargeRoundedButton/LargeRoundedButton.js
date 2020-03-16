@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import classes from './LargeRoundedButton.module.css';
+import React from "react";
+import { Link } from "react-router-dom";
+import classes from "./LargeRoundedButton.module.css";
 
 const LargeRoundedButton = props => {
   return (
