@@ -3,7 +3,7 @@ import React from 'react';
 import classes from './ClearButton.module.css';
 
 const ClearButton = props => {
-  const clearGymName = null;
+  const clearGymName = [];
 
   return (
     <button

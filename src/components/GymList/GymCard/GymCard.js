@@ -3,7 +3,6 @@ import classes from './GymCard.module.css';
 import { Link } from 'react-router-dom';
 
 const GymCard = props => {
-  const previousGymName = props.selectedGymName;
   const gymName = props.gymName;
 
   return (
@@ -11,7 +10,10 @@ const GymCard = props => {
       className={classes.gymNameStyling}
       to='/selectedGym'
       onClick={() => {
-        props.setSelectedGymName([previousGymName, gymName]);
+        props.setSelectedGymName(previousGymName => [
+          ...previousGymName,
+          gymName
+        ]);
       }}
     >
       <h3>{props.gymName}</h3>

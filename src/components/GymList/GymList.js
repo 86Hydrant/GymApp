@@ -11,8 +11,6 @@ const GymList = props => {
     'Hagastan'
   ]);
 
-  const [removeGymCards, setRemoveGymCards] = useState(false);
-
   return (
     <div id='listofGyms'>
       <SearchBar searchBarLabel={props.searchBarLabel} />
