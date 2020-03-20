@@ -5,7 +5,7 @@ export const activitiesList = [
     time: "16:30",
     minutes: "55",
     spotsLeft: "12",
-    gymName: "F&S City"
+    gymName: "Gym City"
   },
   {
     id: "IWDistans",
@@ -13,7 +13,7 @@ export const activitiesList = [
     time: "16:45",
     minutes: "45",
     spotsLeft: "7",
-    gymName: "F&S City"
+    gymName: "Gym City"
   },
   {
     id: "Coreflex",
@@ -21,7 +21,7 @@ export const activitiesList = [
     time: "17:00",
     minutes: "55",
     spotsLeft: "11",
-    gymName: "F&S City"
+    gymName: "Gym City"
   },
   {
     id: "JympaIntensiv",
@@ -29,7 +29,7 @@ export const activitiesList = [
     time: "17:30",
     minutes: "55",
     spotsLeft: "37",
-    gymName: "F&S City"
+    gymName: "Gym City"
   },
   {
     id: "Cirkelgym",
@@ -37,7 +37,7 @@ export const activitiesList = [
     time: "18:00",
     minutes: "55",
     spotsLeft: "0",
-    gymName: "F&S City"
+    gymName: "Gym City"
   },
   {
     id: "DansFusion",
@@ -45,7 +45,7 @@ export const activitiesList = [
     time: "18:00",
     minutes: "55",
     spotsLeft: "20",
-    gymName: "F&S City"
+    gymName: "Gym City"
   },
   {
     id: "JympaMedel",
@@ -53,7 +53,7 @@ export const activitiesList = [
     time: "17:45",
     minutes: "55",
     spotsLeft: "48",
-    gymName: "F&S Farsta"
+    gymName: "Gym Farsta"
   },
   {
     id: "SpinDans",
@@ -61,7 +61,7 @@ export const activitiesList = [
     time: "17:30",
     minutes: "55",
     spotsLeft: "2",
-    gymName: "F&S Farsta"
+    gymName: "Gym Farsta"
   },
   {
     id: "JympaaIntensiv",
@@ -69,7 +69,7 @@ export const activitiesList = [
     time: "17:30",
     minutes: "55",
     spotsLeft: "37",
-    gymName: "F&S Farsta"
+    gymName: "Gym Farsta"
   },
   {
     id: "SkivstangIntervall",
@@ -77,7 +77,7 @@ export const activitiesList = [
     time: "17:45",
     minutes: "75",
     spotsLeft: "0",
-    gymName: "F&S Farsta"
+    gymName: "Gym Farsta"
   },
   {
     id: "Coreflex",
@@ -85,7 +85,7 @@ export const activitiesList = [
     time: "18:00",
     minutes: "55",
     spotsLeft: "1",
-    gymName: "F&S Farsta"
+    gymName: "Gym Farsta"
   },
   {
     id: "SpinSpurt",
@@ -93,7 +93,7 @@ export const activitiesList = [
     time: "18:30",
     minutes: "55",
     spotsLeft: "11",
-    gymName: "F&S Farsta"
+    gymName: "Gym Farsta"
   },
   {
     id: "PlazaSoft",
@@ -101,7 +101,7 @@ export const activitiesList = [
     time: "19:00",
     minutes: "55",
     spotsLeft: "0",
-    gymName: "F&S Farsta"
+    gymName: "Gym Farsta"
   },
   {
     id: "YogaEnergy",
@@ -109,6 +109,6 @@ export const activitiesList = [
     time: "19:00",
     minutes: "75",
     spotsLeft: "0",
-    gymName: "F&S Farsta"
+    gymName: "Gym Farsta"
   }
 ];
