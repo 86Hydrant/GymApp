@@ -20,11 +20,13 @@ const ActivityInfoCard = props => {
         drinking vinegar ramps mustache pork belly art party tbh humblebrag
         venmo iceland mlkshk. Bespoke wolf dreamcatcher, literally marfa vape
         synth coloring book chartreuse taxidermy offal everyday carry
-        chicharrones mixtape freegan. Fashion axe church-key mustache literally
-        coloring book leggings. Deep v artisan chillwave coloring book la croix
-        blue bottle chartreuse gastropub af edison bulb taiyaki. Franzen
-        scenester 3 wolf moon retro listicle pop-up bicycle rights live-edge
-        chicharrones quinoa.
+        chicharrones mixtape freegan.
+      </p>
+      <p className={classes.infoParagraph}>
+        Fashion axe church-key mustache literally coloring book leggings. Deep v
+        artisan chillwave coloring book la croix blue bottle chartreuse
+        gastropub af edison bulb taiyaki. Franzen scenester 3 wolf moon retro
+        listicle pop-up bicycle rights live-edge chicharrones quinoa.
       </p>
       <MediumRoundedButton aria-label="Book Activity" to="#" day="BOOK">
         BOOK
