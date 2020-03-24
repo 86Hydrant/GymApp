@@ -19,6 +19,7 @@ body {
 .activityHeading,
 .activityInfo {
   letter-spacing: 0.2em;
+  font-weight: bold;
 }
 
 .activityHeading {
@@ -33,11 +34,6 @@ body {
   font-size: 14px;
   font-weight: lighter;
   margin: 3.2vh 0;
-}
-
-.infoContainer:hover {
-  color: white;
-  background-color: #dd022c;
 }
 
 h2,

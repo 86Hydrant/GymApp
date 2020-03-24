@@ -5,10 +5,22 @@ import SearchBar from '../SearchBar/SearchBar';
 
 const GymList = props => {
   const [gymNames] = useState([
-    'Stockholm City',
+    'Abrahamsberg ',
     'Farsta',
+    'Gärdet',
+    'Hagastan',
     'Haninge',
-    'Hagastan'
+    'Hornstull',
+    'Kista',
+    'Kungsholmen',
+    'Lindhagen',
+    'Orminge',
+    'Ringen',
+    'Sickla',
+    'Skanstull',
+    'Skrapan',
+    'Solna',
+    'Sundberg'
   ]);
 
   return (
