@@ -1,7 +1,6 @@
-import React from "react";
-import classes from "../Activities/Activities.module.css";
-import MediumRoundedButton from "../Buttons/MediumRoundedButton/MediumRoundedButton";
-import { activitiesList } from "../Activities/ActivitiesList";
+import React from 'react';
+import classes from '../Activities/Activities.module.css';
+import MediumRoundedButton from '../Buttons/MediumRoundedButton/MediumRoundedButton';
 
 const ActivityInfoCard = props => {
   return (
@@ -28,7 +27,7 @@ const ActivityInfoCard = props => {
         gastropub af edison bulb taiyaki. Franzen scenester 3 wolf moon retro
         listicle pop-up bicycle rights live-edge chicharrones quinoa.
       </p>
-      <MediumRoundedButton aria-label="Book Activity" to="#" day="BOOK">
+      <MediumRoundedButton aria-label='Book Activity' to='#' day='BOOK'>
         BOOK
       </MediumRoundedButton>
     </div>
