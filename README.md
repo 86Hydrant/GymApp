@@ -13,7 +13,9 @@ Special care was taken to ensure the app is completely accessible to all users:
 </br>
  Design was done similar to the gym's current design system, however logo and name has been omitted. </br>
  
-  Here you can find the figma file: https://www.figma.com/file/tc4FJrHbhwDBtX8Y1SwWV7/Friskis%26Svettis?node-id=0%3A1 
+ -The site is live here: https://gymappremake.netlify.com/
+ 
+  -Here you can find the figma file: https://www.figma.com/file/tc4FJrHbhwDBtX8Y1SwWV7/Friskis%26Svettis?node-id=0%3A1 
 
 
 
