@@ -1,14 +1,16 @@
 body {
   box-sizing: border-box;
+  max-width: 400px;
+  margin: auto;
+  border: 1px solid grey;
 }
 
 .infoContainer {
   text-decoration: none;
   line-height: 0.6;
   text-align: left;
-  padding-left: 8vw;
+  padding-left: 2vw;
   display: block;
-  width: 100vw;
   height: auto;
   margin-bottom: 6vh;
   margin-top: 3vh;
@@ -39,10 +41,12 @@ body {
 h2,
 .infoParagraph {
   text-align: left;
-  padding: 0 8vw;
+  padding: 0 2vw;
   line-height: 1.5em;
+  margin-bottom: 3vh;
 }
 
 .infoHeader {
+  color: #dd022c;
   margin-top: -3vh;
 }

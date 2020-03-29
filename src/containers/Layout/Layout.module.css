@@ -1,6 +1,6 @@
 .bodyStyling {
-  margin: 0;
+  margin: auto;
   padding: 0;
-  width: 100vw;
+  max-width: 400px;
   text-align: center;
 }

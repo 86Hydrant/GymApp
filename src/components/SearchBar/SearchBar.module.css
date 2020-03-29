@@ -15,6 +15,7 @@ label {
   font-weight: bold;
   font-size: 16px;
   letter-spacing: 0.3rem;
+  margin-top: 3vh;
 }
 
 .searchBarContainer {

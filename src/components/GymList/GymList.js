@@ -4,40 +4,31 @@ import classes from './GymList.module.css';
 import SearchBar from '../SearchBar/SearchBar';
 
 const GymList = props => {
-  const [gymNames] = useState([
-    'Abrahamsberg ',
-    'Farsta',
-    'Gärdet',
-    'Hagastan',
-    'Haninge',
-    'Hornstull',
-    'Kista',
-    'Kungsholmen',
-    'Lindhagen',
-    'Orminge',
-    'Ringen',
-    'Sickla',
-    'Skanstull',
-    'Skrapan',
-    'Solna',
-    'Sundberg'
-  ]);
+	const [gymNames] = useState([
+		'Stockholm City',
+		'Farsta',
+		'Haninge',
+		'Hagastan',
+		'Nacka',
+		'Hökerängen',
+		'Blåsut'
+	]);
 
-  return (
-    <div id='listofGyms'>
-      <SearchBar searchBarLabel={props.searchBarLabel} />
-      <ul className={classes.gymListStyling}>
-        {gymNames.map((gymName, index) => (
-          <GymCard
-            key={index}
-            gymName={gymName}
-            setSelectedGymName={props.setSelectedGymName}
-            selectedGymName={props.selectedGymName}
-          />
-        ))}
-      </ul>
-    </div>
-  );
+	return (
+		<div id='listofGyms'>
+			<SearchBar searchBarLabel='Search for a Gym' />
+			<ul className={classes.gymListStyling}>
+				{gymNames.map((gymName, index) => (
+					<GymCard
+						key={index}
+						gymName={gymName}
+						setSelectedGymName={props.setSelectedGymName}
+						selectedGymName={props.selectedGymName}
+					/>
+				))}
+			</ul>
+		</div>
+	);
 };
 
 export default GymList;
